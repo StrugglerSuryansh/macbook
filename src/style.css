@@ -1,0 +1,56 @@
+html,
+body {
+ height: 100%;
+ width: 100%;
+}
+#root {
+ height: 100%;
+ width: 100%;
+ background-color: black;
+ scroll-behavior: smooth;
+}
+.text-gradient {
+ position: relative;
+ background: url("https://i.pinimg.com/564x/d9/54/87/d95487ffab31b9722b12eaf0e5709494.jpg")
+  no-repeat center center;
+ -webkit-background-clip: text;
+ background-clip: text;
+ color: transparent;
+ background-size: cover;
+}
+.text-gradient::before {
+ content: "mackbook pro.";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ background: url("https://i.pinimg.com/564x/d9/54/87/d95487ffab31b9722b12eaf0e5709494.jpg")
+  no-repeat center center;
+ -webkit-background-clip: text;
+ background-clip: text;
+ color: transparent;
+ background-size: cover;
+ filter: blur(40px);
+ opacity: 0.8;
+}
+.text-gradient::after {
+ content: "mackbook pro.";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ background: url("https://i.pinimg.com/564x/d9/54/87/d95487ffab31b9722b12eaf0e5709494.jpg")
+  no-repeat center center;
+ -webkit-background-clip: text;
+ background-clip: text;
+ color: transparent;
+ background-size: cover;
+ filter: blur(20px);
+ opacity: 0.8;
+}
+
+body::-webkit-scrollbar {
+ display: none;
+}
